@@ -11,6 +11,10 @@ scalacOptions in Test ++= Seq("-Yrangepos")
 // append several options to the list of options passed to the Java compiler
 javacOptions ++= Seq("-source", "1.8", "-target", "1.8", "-g")
 
+//java -Xmx8g -jar Rootbeer.jar App.jar App-GPU.jar
+javaOptions ++= Seq("-Xmx8g", "-jar lib/Rootbeer-1.2.4.jar")
+
+
 javaOptions in (Test,run) += "-XstartOnFirstThread"
 
 
