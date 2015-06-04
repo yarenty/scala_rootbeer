@@ -19,6 +19,18 @@ Test usage of rootbeer inside scala project
 * have fun ;-)
 
 
+#Update core rootbeer
+to get version of rootbeer supporting nvcc 7.0: (use https://github.com/yarenty/rootbeer1 )
+  ant clean
+  ant jar
+  ./pack-rootbeer
+@Note: ant is fixed to macosx Java 7 lib as rootbeer works only on java 1.7
+
+
+
+
+
+
 # Status
 
 
