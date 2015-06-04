@@ -7,14 +7,14 @@ Test usage of rootbeer inside scala project
 * sbt package
 * build:
 * <pre>
-/usr/lib/jvm/java-7-openjdk-amd64/bin/java / 
-	-Xmx8g -jar lib/Rootbeer-1.2.4.jar target/scala-2.11/scala_rootbeer_2.11-1.0.0.jar rb-GPU.jar / 
-	-norecursion -nodoubles -computecapability sm_30 --generate-code arch=compute_30,code="sm_30" /
-	-64bit
+/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/bin/java -Xmx8g -jar lib/Rootbeer.jar \
+    target/scala-2.11/scala_rootbeer_2.11-1.0.0.jar rb-GPU.jar -norecursion -nodoubles \
+    -computecapability sm_30 --generate-code arch=compute_30,code="sm_30" -64bit
+
 </pre>
 * run:
 <pre>
-/usr/lib/jvm/java-7-openjdk-amd64/bin/java -Xmx8g -jar rb-GPU.jar 
+/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/bin/java -Xmx8g -cp rb-GPU.jar \  com.yarenty.java.rootbeer.add.SimpleAdd 
 </pre>
 * have fun ;-)
 
