@@ -15,7 +15,7 @@ javacOptions ++= Seq("-source", "1.8", "-target", "1.8", "-g")
 javaOptions ++= Seq("-Xmx8g", "-jar lib/Rootbeer-1.2.4.jar")
 
 
-javaOptions in (Test,run) += "-XstartOnFirstThread"
+javaOptions in(Test, run) += "-XstartOnFirstThread"
 
 
 // LIBRARIES
@@ -43,10 +43,10 @@ libraryDependencies += "org.scala-lang" % "scala-reflect" % "2.11.6"
 libraryDependencies += "org.scala-lang" % "scala-compiler" % "2.11.6"
 
 //swing for scala
-libraryDependencies += "org.scala-lang" % "scala-swing" % "2.11.0-M7"
+//libraryDependencies += "org.scala-lang" % "scala-swing" % "2.11.0-M7"
 
 //better readline ;-)
-libraryDependencies += "org.scala-lang" % "jline" % "2.11.0-M3"
+//libraryDependencies += "org.scala-lang" % "jline" % "2.11.0-M3"
 
 
 //-------------------
@@ -66,22 +66,22 @@ libraryDependencies += "log4j" % "log4j" % "1.2.17"
 //-------------------
 // some additional stuff
 //REST framework
-libraryDependencies += "com.squareup.retrofit" % "retrofit" % "1.9.0"
+//libraryDependencies += "com.squareup.retrofit" % "retrofit" % "1.9.0"
 
 
 //akka
-libraryDependencies += "com.typesafe.akka" % "akka-actor_2.11" % "2.3.9"
+//libraryDependencies += "com.typesafe.akka" % "akka-actor_2.11" % "2.3.9"
 
-libraryDependencies += "com.typesafe.akka" % "akka-testkit_2.11" % "2.3.9"
+//libraryDependencies += "com.typesafe.akka" % "akka-testkit_2.11" % "2.3.9"
 
-libraryDependencies += "com.typesafe.akka" % "akka-slf4j_2.11" % "2.3.9"
+//libraryDependencies += "com.typesafe.akka" % "akka-slf4j_2.11" % "2.3.9"
 
 
 //RESOLVERS
 
 resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
 
-resolvers += "Local Maven Repository" at ""+Path.userHome.asFile.toURI.toURL+".m2/repository"
+resolvers += "Local Maven Repository" at "" + Path.userHome.asFile.toURI.toURL + ".m2/repository"
 
 
 
