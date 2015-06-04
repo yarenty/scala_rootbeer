@@ -22,9 +22,11 @@ com.yarenty.java.rootbeer.add.SimpleAdd
 
 #Update core rootbeer
 to get version of rootbeer supporting nvcc 7.0: (use https://github.com/yarenty/rootbeer1 )
+<pre>
   ant clean
   ant jar
   ./pack-rootbeer
+</pre>
 @Note: ant is fixed to macosx Java 7 lib as rootbeer works only on java 1.7
 
 
