@@ -14,7 +14,8 @@ Test usage of rootbeer inside scala project
 </pre>
 * run:
 <pre>
-/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/bin/java -Xmx8g -cp rb-GPU.jar \  com.yarenty.java.rootbeer.add.SimpleAdd 
+/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/bin/java -Xmx8g -cp rb-GPU.jar \
+com.yarenty.java.rootbeer.add.SimpleAdd 
 </pre>
 * have fun ;-)
 
